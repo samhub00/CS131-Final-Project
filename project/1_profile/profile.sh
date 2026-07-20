@@ -19,21 +19,22 @@ else
 	echo "Checking filesize..."
 	echo "Filesize: $(time du -h $INPUTFILE)"
 	echo ""
-	#echo "Checking row count..."
+	#echo "Checking row count... (takes a while)"
 	#echo "Row count: $(time wc -l $INPUTFILE)"
 	
 	# schema peek
 	echo "--- SCHEMA ---"
 	echo "Getting column headers..."
 	echo "Column headers: $(time head -1 $INPUTFILE)"
-	echo "Column count: $(time head -1 $INPUTFILE | wc)"
+	#echo "Column count: $(time head -1 $INPUTFILE | wc)"
 	echo "Table snippet:"
 	echo "$(time head -6 $INPUTFILE | column -t -s ',')"
 	echo ""
 	#TODO somehow use cut?
 
-
-	echo ""
+	# top categories & cardinality
+	echo "--- "
+	#echo "$(time head -100 $INPUTFILE | sort | uniq -c | sort -nr)"
 
 
 fi
