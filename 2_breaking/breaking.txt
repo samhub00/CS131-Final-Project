@@ -1,0 +1,16 @@
+The memory overload of the system was very apparent when trying to open
+the raw .csv file using Numbers from Apple which does have a slightly smaller
+size limit of 1 million rows by 1 thousand columns. This is still an extremely
+large amount that someone using Numbers for the purpose of reading most csvs
+or doing something like standard excel work would never hit. When I tried
+to open the data file, my computer generated an error code, and I had to force
+quite the program as shown in 'Excel Breaking.png'.
+
+The overloading was similar but different for pandas. Mac has a feature that
+shares memory with the ssd using something called a swap. Because of this,
+if the program you are using (in this case Python) has no protection for 
+memory overuse, no errors will occur. I waited about 5 minutes to see that
+the program vram usage had grown to almost half a terabyte and decided to 
+stop the reading process. Even if it were able to read it, performing calculations
+would be extremely slow. I show the time and memory usage in both pandas 
+images. 
