@@ -1,0 +1,73 @@
+Running profiling on input file ../all_reviews.csv
+---
+--- FILE SIZE ---
+Checking filesize...
+
+real	0m0.004s
+user	0m0.000s
+sys	0m0.003s
+Filesize: 40G	../all_reviews.csv
+
+--- SCHEMA ---
+Getting column headers...
+
+real	0m0.004s
+user	0m0.000s
+sys	0m0.002s
+Column headers: recommendationid,appid,game,author_steamid,author_num_games_owned,author_num_reviews,author_playtime_forever,author_playtime_last_two_weeks,author_playtime_at_review,author_last_played,language,review,timestamp_created,timestamp_updated,voted_up,votes_up,votes_funny,weighted_vote_score,comment_count,steam_purchase,received_for_free,written_during_early_access,hidden_in_steam_china,steam_china_location
+Table snippet:
+
+real	0m0.004s
+user	0m0.001s
+sys	0m0.002s
+recommendationid  appid  game            author_steamid     author_num_games_owned  author_num_reviews  author_playtime_forever  author_playtime_last_two_weeks  author_playtime_at_review  author_last_played  language  review                timestamp_created  timestamp_updated  voted_up  votes_up  votes_funny  weighted_vote_score  comment_count  steam_purchase  received_for_free  written_during_early_access  hidden_in_steam_china  steam_china_location
+148919893         10     Counter-Strike  76561199036724879  0                       3                   197                      197                             197                        1698336369          russian   "старость"            1698336397         1698336397         1         0         0            0.0                  0              1               0                  0                            1                      ""
+148919350         10     Counter-Strike  76561198826729322  0                       21                  441                      37                              441                        1698335809          russian   "Лучше кс 2"          1698335821         1698335821         1         0         0            0.0                  0              1               0                  0                            1                      ""
+148913051         10     Counter-Strike  76561199101237625  7                       1                   1440                     1440                            1313                       1698338635          turkish   "çoh iyi ama pahalı"  1698329862         1698329862         1         0         0            0.0                  0              1               0                  0                            1                      ""
+148912714         10     Counter-Strike  76561198347582422  11                      4                   1636                     83                              1612                       1698341834          russian   "топ"                 1698329555         1698329555         1         0         0            0.0                  0              1               0                  0                            1                      ""
+148912575         10     Counter-Strike  76561198363716821  0                       2                   197                      41                              197                        1698329401          english   "GOAT Game !!"        1698329419         1698329419         1         0         0            0.0                  0              1               0                  0                            1                      ""
+
+--- 
+--- AGGREGATE ---
+Running awk on file... (will take a long time)
+
+real	0m3.156s
+user	0m2.698s
+sys	0m0.684s
+total row count =  999999
+unique users =  901921
+total playtime sum =  14298056239
+average total playtime =  14298.1
+total playtime in last 2 weeks sum =  39835905
+average total playtime in last 2 weeks =  39.8359
+
+language counts:
+	 finnish  =  2109
+	 koreana  =  15254
+	 bulgarian  =  1017
+	 indonesian  =  15
+	 danish  =  1694
+	 dutch  =  2734
+	 japanese  =  6853
+	 hungarian  =  5426
+	 english  =  415969
+	 german  =  32468
+	 latam  =  6090
+	 norwegian  =  1157
+	 tchinese  =  16025
+	 portuguese  =  4948
+	 spanish  =  55696
+	 vietnamese  =  340
+	 ukrainian  =  3252
+	 greek  =  762
+	 czech  =  12541
+	 swedish  =  3148
+	 italian  =  5882
+	 polish  =  33183
+	 romanian  =  6763
+	 brazilian  =  35894
+	 schinese  =  128156
+	 turkish  =  37457
+	 thai  =  3371
+	 russian  =  140518
+	 french  =  21277
