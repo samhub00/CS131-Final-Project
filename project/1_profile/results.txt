@@ -4,22 +4,22 @@ Running profiling on input file ../all_reviews.csv
 Checking filesize...
 
 real	0m0.004s
-user	0m0.000s
-sys	0m0.003s
+user	0m0.003s
+sys	0m0.000s
 Filesize: 40G	../all_reviews.csv
 
 --- SCHEMA ---
 Getting column headers...
 
-real	0m0.004s
-user	0m0.000s
-sys	0m0.002s
+real	0m0.011s
+user	0m0.003s
+sys	0m0.000s
 Column headers: recommendationid,appid,game,author_steamid,author_num_games_owned,author_num_reviews,author_playtime_forever,author_playtime_last_two_weeks,author_playtime_at_review,author_last_played,language,review,timestamp_created,timestamp_updated,voted_up,votes_up,votes_funny,weighted_vote_score,comment_count,steam_purchase,received_for_free,written_during_early_access,hidden_in_steam_china,steam_china_location
 Table snippet:
 
-real	0m0.004s
+real	0m0.005s
 user	0m0.001s
-sys	0m0.002s
+sys	0m0.003s
 recommendationid  appid  game            author_steamid     author_num_games_owned  author_num_reviews  author_playtime_forever  author_playtime_last_two_weeks  author_playtime_at_review  author_last_played  language  review                timestamp_created  timestamp_updated  voted_up  votes_up  votes_funny  weighted_vote_score  comment_count  steam_purchase  received_for_free  written_during_early_access  hidden_in_steam_china  steam_china_location
 148919893         10     Counter-Strike  76561199036724879  0                       3                   197                      197                             197                        1698336369          russian   "старость"            1698336397         1698336397         1         0         0            0.0                  0              1               0                  0                            1                      ""
 148919350         10     Counter-Strike  76561198826729322  0                       21                  441                      37                              441                        1698335809          russian   "Лучше кс 2"          1698335821         1698335821         1         0         0            0.0                  0              1               0                  0                            1                      ""
@@ -31,43 +31,43 @@ recommendationid  appid  game            author_steamid     author_num_games_own
 --- AGGREGATE ---
 Running awk on file... (will take a long time)
 
-real	0m3.156s
-user	0m2.698s
-sys	0m0.684s
-total row count =  999999
-unique users =  901921
-total playtime sum =  14298056239
-average total playtime =  14298.1
-total playtime in last 2 weeks sum =  39835905
-average total playtime in last 2 weeks =  39.8359
+real	7m5.579s
+user	6m43.636s
+sys	0m47.562s
+total row count =  99999999
+unique users =  34623593
+total playtime sum =  1412023567926
+average total playtime =  14120.2
+total playtime in last 2 weeks sum =  8185273590
+average total playtime in last 2 weeks =  81.8527
 
 language counts:
-	 finnish  =  2109
-	 koreana  =  15254
-	 bulgarian  =  1017
-	 indonesian  =  15
-	 danish  =  1694
-	 dutch  =  2734
-	 japanese  =  6853
-	 hungarian  =  5426
-	 english  =  415969
-	 german  =  32468
-	 latam  =  6090
-	 norwegian  =  1157
-	 tchinese  =  16025
-	 portuguese  =  4948
-	 spanish  =  55696
-	 vietnamese  =  340
-	 ukrainian  =  3252
-	 greek  =  762
-	 czech  =  12541
-	 swedish  =  3148
-	 italian  =  5882
-	 polish  =  33183
-	 romanian  =  6763
-	 brazilian  =  35894
-	 schinese  =  128156
-	 turkish  =  37457
-	 thai  =  3371
-	 russian  =  140518
-	 french  =  21277
+	 finnish  =  241703
+	 koreana  =  2018264
+	 bulgarian  =  46114
+	 indonesian  =  1141
+	 danish  =  213428
+	 dutch  =  307713
+	 japanese  =  514443
+	 hungarian  =  297936
+	 english  =  45451028
+	 german  =  3332907
+	 latam  =  506307
+	 norwegian  =  142741
+	 tchinese  =  999410
+	 portuguese  =  369906
+	 spanish  =  4290530
+	 vietnamese  =  51665
+	 ukrainian  =  293618
+	 greek  =  65966
+	 czech  =  656779
+	 swedish  =  348671
+	 italian  =  649897
+	 polish  =  2438388
+	 romanian  =  164437
+	 brazilian  =  4083680
+	 schinese  =  15618017
+	 turkish  =  3010023
+	 thai  =  436340
+	 russian  =  11153523
+	 french  =  2295424

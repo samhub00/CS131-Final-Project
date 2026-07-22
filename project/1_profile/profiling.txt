@@ -1,0 +1,4 @@
+time du -h $INPUTFILE
+time head -1 $INPUTFILE
+time head -6 $INPUTFILE | column -t -s ','
+time head -100000000 $INPUTFILE | awk --csv -f aggregate.awk

@@ -42,7 +42,7 @@ else
 	echo "Running awk on file... (will take a long time)"
 	# note: must call awk with --csv or it breaks at around line ~234150 due to commas
 	# TODO call with whole file instead? was taking way too long for a test run
-	echo "$(time head -1000000 $INPUTFILE | awk --csv -f aggregate.awk)"
+	echo "$(time head -100000000 $INPUTFILE | awk --csv -f aggregate.awk )"
 
 fi
 
