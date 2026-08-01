@@ -1,0 +1,1 @@
+gcloud dataproc batches submit pyspark access_test.py --region=$REGION --deps-bucket=$BUCKET -- gs://$BUCKET/data/all_reviews.csv 2>&1 | tee results.txt
