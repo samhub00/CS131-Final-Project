@@ -1,0 +1,79 @@
+Batch [5dbba48d86694c8e932a2371ca157db8] submitted.
+WARNING: No runtime version specified. Using the default runtime version. It is recommended to select a specific major.minor runtime version in production, as the default runtime version may change at any time.
+Using the default container image
+Waiting for container log creation
+PYSPARK_PYTHON=/opt/dataproc/conda/bin/python
+Generating /home/spark/.pip/pip.conf
+Configuring index-url as 'https://us-python.pkg.dev/artifact-registry-python-cache/virtual-python/simple/'
+JAVA_HOME=/usr/lib/jvm/temurin-17-jdk-amd64
+SPARK_EXTRA_CLASSPATH=
+:: loading settings :: file = /etc/spark/conf/ivysettings.xml
+26/08/01 20:42:15 WARN MetricsConfig: Cannot locate configuration: tried hadoop-metrics2-google-hadoop-file-system.properties,hadoop-metrics2.properties
+26/08/01 20:42:15 INFO MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+26/08/01 20:42:15 INFO MetricsSystemImpl: google-hadoop-file-system metrics system started
++----------------+-----+--------------+--------------+----------------------+------------------+-----------------------+------------------------------+-------------------------+------------------+--------+----------------------------------+-----------------+-----------------+--------+--------+-----------+-------------------+-------------+--------------+-----------------+---------------------------+---------------------+--------------------+
+|recommendationid|appid|          game|author_steamid|author_num_games_owned|author_num_reviews|author_playtime_forever|author_playtime_last_two_weeks|author_playtime_at_review|author_last_played|language|                            review|timestamp_created|timestamp_updated|voted_up|votes_up|votes_funny|weighted_vote_score|comment_count|steam_purchase|received_for_free|written_during_early_access|hidden_in_steam_china|steam_china_location|
++----------------+-----+--------------+--------------+----------------------+------------------+-----------------------+------------------------------+-------------------------+------------------+--------+----------------------------------+-----------------+-----------------+--------+--------+-----------+-------------------+-------------+--------------+-----------------+---------------------------+---------------------+--------------------+
+|       148919893|   10|Counter-Strike|          NULL|                     0|                 3|                    197|                           197|                      197|        1698336369| russian|                          старость|       1698336397|       1698336397|       1|       0|          0|               NULL|            0|             1|                0|                          0|                    1|                NULL|
+|       148919350|   10|Counter-Strike|          NULL|                     0|                21|                    441|                            37|                      441|        1698335809| russian|                        Лучше кс 2|       1698335821|       1698335821|       1|       0|          0|               NULL|            0|             1|                0|                          0|                    1|                NULL|
+|       148913051|   10|Counter-Strike|          NULL|                     7|                 1|                   1440|                          1440|                     1313|        1698338635| turkish|                çoh iyi ama pahalı|       1698329862|       1698329862|       1|       0|          0|               NULL|            0|             1|                0|                          0|                    1|                NULL|
+|       148912714|   10|Counter-Strike|          NULL|                    11|                 4|                   1636|                            83|                     1612|        1698341834| russian|                               топ|       1698329555|       1698329555|       1|       0|          0|               NULL|            0|             1|                0|                          0|                    1|                NULL|
+|       148912575|   10|Counter-Strike|          NULL|                     0|                 2|                    197|                            41|                      197|        1698329401| english|                      GOAT Game !!|       1698329419|       1698329419|       1|       0|          0|               NULL|            0|             1|                0|                          0|                    1|                NULL|
+|       148906148|   10|Counter-Strike|          NULL|                    22|                 2|                   1685|                            70|                     1649|        1698323046| russian|                               топ|       1698321840|       1698321840|       1|       0|          0|               NULL|            0|             1|                0|                          0|                    1|                NULL|
+|       148905699|   10|Counter-Strike|          NULL|                    88|                39|                     11|                             0|                       11|        1695752100| turkish|              eskisi kadar sarm...|       1698321259|       1698321259|       1|       0|          0|               NULL|            0|             0|                0|                          0|                    1|                NULL|
+|       148900627|   10|Counter-Strike|          NULL|                     0|                 2|                  45119|                           503|                    45119|        1698157431| russian|                         Идеальная|       1698314419|       1698314419|       1|       0|          0|               NULL|            0|             1|                0|                          0|                    1|                NULL|
+|       148899121|   10|Counter-Strike|          NULL|                     9|                 4|                   1271|                           973|                     1202|        1698338304| russian|                               топ|       1698312060|       1698312060|       1|       0|          0|               NULL|            0|             1|                0|                          0|                    1|                NULL|
+|       148898785|   10|Counter-Strike|          NULL|                   491|                60|                    721|                             0|                      721|        1660831719|schinese|史上最优秀的fps游戏，众多国产游...|       1698311451|       1698311451|       1|       0|          0|               NULL|            0|             1|                0|                          0|                    1|                NULL|
++----------------+-----+--------------+--------------+----------------------+------------------+-----------------------+------------------------------+-------------------------+------------------+--------+----------------------------------+-----------------+-----------------+--------+--------+-----------+-------------------+-------------+--------------+-----------------+---------------------------+---------------------+--------------------+
+only showing top 10 rows
+
++-------------+--------+
+|review_length|voted_up|
++-------------+--------+
+|            8|       1|
+|           10|       1|
+|           18|       1|
+|            3|       1|
+|           12|       1|
+|            3|       1|
+|           21|       1|
+|            9|       1|
+|            3|       1|
+|           33|       1|
++-------------+--------+
+only showing top 10 rows
+
++-------------+--------+
+|review_length|voted_up|
++-------------+--------+
+|         1121|       0|
+|           15|       0|
+|           25|       0|
+|            3|       0|
+|           21|       0|
+|           14|       0|
+|            5|       0|
+|            4|       0|
+|            3|       0|
+|           30|       0|
++-------------+--------+
+only showing top 10 rows
+
+Batch [5dbba48d86694c8e932a2371ca157db8] finished.
+metadata:
+  '@type': type.googleapis.com/google.cloud.dataproc.v1.BatchOperationMetadata
+  batch: projects/cs131-group-project-kyle-sam/locations/us-central1/batches/5dbba48d86694c8e932a2371ca157db8
+  batchUuid: 004fed13-ceb7-4bd6-bc18-ee6bfacbdfdb
+  createTime: '2026-08-01T20:41:02.411475Z'
+  description: Batch
+  labels:
+    goog-dataproc-batch-id: 5dbba48d86694c8e932a2371ca157db8
+    goog-dataproc-batch-uuid: 004fed13-ceb7-4bd6-bc18-ee6bfacbdfdb
+    goog-dataproc-drz-resource-uuid: batch-004fed13-ceb7-4bd6-bc18-ee6bfacbdfdb
+    goog-dataproc-location: us-central1
+  operationType: BATCH
+  warnings:
+  - No runtime version specified. Using the default runtime version. It is recommended
+    to select a specific major.minor runtime version in production, as the default
+    runtime version may change at any time.
+name: projects/cs131-group-project-kyle-sam/regions/us-central1/operations/9601e035-b27b-3d5f-a4c4-320f30fb9229

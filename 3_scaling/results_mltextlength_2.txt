@@ -1,0 +1,62 @@
+Batch [85881d009f784d909d76dbb9c68ef711] submitted.
+WARNING: No runtime version specified. Using the default runtime version. It is recommended to select a specific major.minor runtime version in production, as the default runtime version may change at any time.
+Using the default container image
+Waiting for container log creation
+PYSPARK_PYTHON=/opt/dataproc/conda/bin/python
+Generating /home/spark/.pip/pip.conf
+Configuring index-url as 'https://us-python.pkg.dev/artifact-registry-python-cache/virtual-python/simple/'
+JAVA_HOME=/usr/lib/jvm/temurin-17-jdk-amd64
+SPARK_EXTRA_CLASSPATH=
+:: loading settings :: file = /etc/spark/conf/ivysettings.xml
+26/08/01 20:07:05 WARN MetricsConfig: Cannot locate configuration: tried hadoop-metrics2-google-hadoop-file-system.properties,hadoop-metrics2.properties
+26/08/01 20:07:05 INFO MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+26/08/01 20:07:05 INFO MetricsSystemImpl: google-hadoop-file-system metrics system started
++--------------------+--------+
+|            voted_up|   count|
++--------------------+--------+
+|                   1|95383123|
+|                   0|15545068|
+|                NULL|   25767|
+| and I became the...|    3061|
+| если остался про...|    2464|
+|        ~: : : : : :|    1741|
+|             however|    1641|
+|       and in theory|    1368|
+| and I wound up p...|     936|
+|              though|     823|
+|                well|     530|
+|             конечно|     508|
+| моделлеров и про...|     478|
+|           of course|     445|
+|                 yes|     404|
+|             weapons|     376|
+| because this gam...|     371|
+|                 etc|     367|
+|   _.: : : : : : : :|     363|
+|                 but|     360|
+|                  но|     348|
+|         for example|     341|
+|       in my opinion|     330|
+|               again|     311|
+| those are Pollen...|     298|
++--------------------+--------+
+only showing top 25 rows
+
+Batch [85881d009f784d909d76dbb9c68ef711] finished.
+metadata:
+  '@type': type.googleapis.com/google.cloud.dataproc.v1.BatchOperationMetadata
+  batch: projects/cs131-group-project-kyle-sam/locations/us-central1/batches/85881d009f784d909d76dbb9c68ef711
+  batchUuid: 26e12ae8-7b98-47d5-b461-4036af44b604
+  createTime: '2026-08-01T20:05:52.344888Z'
+  description: Batch
+  labels:
+    goog-dataproc-batch-id: 85881d009f784d909d76dbb9c68ef711
+    goog-dataproc-batch-uuid: 26e12ae8-7b98-47d5-b461-4036af44b604
+    goog-dataproc-drz-resource-uuid: batch-26e12ae8-7b98-47d5-b461-4036af44b604
+    goog-dataproc-location: us-central1
+  operationType: BATCH
+  warnings:
+  - No runtime version specified. Using the default runtime version. It is recommended
+    to select a specific major.minor runtime version in production, as the default
+    runtime version may change at any time.
+name: projects/cs131-group-project-kyle-sam/regions/us-central1/operations/2b30120a-6568-3cea-adaf-c3dc1894091a
