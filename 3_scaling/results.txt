@@ -1,0 +1,68 @@
+Batch [503c40804f7c444699b59535d1233298] submitted.
+WARNING: No runtime version specified. Using the default runtime version. It is recommended to select a specific major.minor runtime version in production, as the default runtime version may change at any time.
+Using the default container image
+Waiting for container log creation
+PYSPARK_PYTHON=/opt/dataproc/conda/bin/python
+Generating /home/spark/.pip/pip.conf
+Configuring index-url as 'https://us-python.pkg.dev/artifact-registry-python-cache/virtual-python/simple/'
+JAVA_HOME=/usr/lib/jvm/temurin-17-jdk-amd64
+SPARK_EXTRA_CLASSPATH=
+:: loading settings :: file = /etc/spark/conf/ivysettings.xml
+26/07/31 20:39:03 WARN MetricsConfig: Cannot locate configuration: tried hadoop-metrics2-google-hadoop-file-system.properties,hadoop-metrics2.properties
+26/07/31 20:39:03 INFO MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+26/07/31 20:39:03 INFO MetricsSystemImpl: google-hadoop-file-system metrics system started
++----------------+-----+--------------+-----------------+----------------------+------------------+-----------------------+------------------------------+-------------------------+------------------+--------+------------------+-----------------+-----------------+--------+--------+-----------+-------------------+-------------+--------------+-----------------+---------------------------+---------------------+--------------------+
+|recommendationid|appid|          game|   author_steamid|author_num_games_owned|author_num_reviews|author_playtime_forever|author_playtime_last_two_weeks|author_playtime_at_review|author_last_played|language|            review|timestamp_created|timestamp_updated|voted_up|votes_up|votes_funny|weighted_vote_score|comment_count|steam_purchase|received_for_free|written_during_early_access|hidden_in_steam_china|steam_china_location|
++----------------+-----+--------------+-----------------+----------------------+------------------+-----------------------+------------------------------+-------------------------+------------------+--------+------------------+-----------------+-----------------+--------+--------+-----------+-------------------+-------------+--------------+-----------------+---------------------------+---------------------+--------------------+
+|       148919893|   10|Counter-Strike|76561199036724879|                     0|                 3|                    197|                           197|                      197|        1698336369| russian|          старость|       1698336397|       1698336397|       1|       0|          0|                0.0|            0|             1|                0|                          0|                    1|                NULL|
+|       148919350|   10|Counter-Strike|76561198826729322|                     0|                21|                    441|                            37|                      441|        1698335809| russian|        Лучше кс 2|       1698335821|       1698335821|       1|       0|          0|                0.0|            0|             1|                0|                          0|                    1|                NULL|
+|       148913051|   10|Counter-Strike|76561199101237625|                     7|                 1|                   1440|                          1440|                     1313|        1698338635| turkish|çoh iyi ama pahalı|       1698329862|       1698329862|       1|       0|          0|                0.0|            0|             1|                0|                          0|                    1|                NULL|
+|       148912714|   10|Counter-Strike|76561198347582422|                    11|                 4|                   1636|                            83|                     1612|        1698341834| russian|               топ|       1698329555|       1698329555|       1|       0|          0|                0.0|            0|             1|                0|                          0|                    1|                NULL|
+|       148912575|   10|Counter-Strike|76561198363716821|                     0|                 2|                    197|                            41|                      197|        1698329401| english|      GOAT Game !!|       1698329419|       1698329419|       1|       0|          0|                0.0|            0|             1|                0|                          0|                    1|                NULL|
++----------------+-----+--------------+-----------------+----------------------+------------------+-----------------------+------------------------------+-------------------------+------------------+--------+------------------+-----------------+-----------------+--------+--------+-----------+-------------------+-------------+--------------+-----------------+---------------------------+---------------------+--------------------+
+only showing top 5 rows
+
+root
+ |-- recommendationid: string (nullable = true)
+ |-- appid: string (nullable = true)
+ |-- game: string (nullable = true)
+ |-- author_steamid: string (nullable = true)
+ |-- author_num_games_owned: string (nullable = true)
+ |-- author_num_reviews: string (nullable = true)
+ |-- author_playtime_forever: string (nullable = true)
+ |-- author_playtime_last_two_weeks: string (nullable = true)
+ |-- author_playtime_at_review: string (nullable = true)
+ |-- author_last_played: string (nullable = true)
+ |-- language: string (nullable = true)
+ |-- review: string (nullable = true)
+ |-- timestamp_created: string (nullable = true)
+ |-- timestamp_updated: string (nullable = true)
+ |-- voted_up: string (nullable = true)
+ |-- votes_up: string (nullable = true)
+ |-- votes_funny: string (nullable = true)
+ |-- weighted_vote_score: string (nullable = true)
+ |-- comment_count: string (nullable = true)
+ |-- steam_purchase: string (nullable = true)
+ |-- received_for_free: string (nullable = true)
+ |-- written_during_early_access: string (nullable = true)
+ |-- hidden_in_steam_china: string (nullable = true)
+ |-- steam_china_location: string (nullable = true)
+
+Batch [503c40804f7c444699b59535d1233298] finished.
+metadata:
+  '@type': type.googleapis.com/google.cloud.dataproc.v1.BatchOperationMetadata
+  batch: projects/peerless-column-499516-a0/locations/us-central1/batches/503c40804f7c444699b59535d1233298
+  batchUuid: 90849644-5bd2-4c2b-b1ac-deb2cbbe2e73
+  createTime: '2026-07-31T20:37:44.229977Z'
+  description: Batch
+  labels:
+    goog-dataproc-batch-id: 503c40804f7c444699b59535d1233298
+    goog-dataproc-batch-uuid: 90849644-5bd2-4c2b-b1ac-deb2cbbe2e73
+    goog-dataproc-drz-resource-uuid: batch-90849644-5bd2-4c2b-b1ac-deb2cbbe2e73
+    goog-dataproc-location: us-central1
+  operationType: BATCH
+  warnings:
+  - No runtime version specified. Using the default runtime version. It is recommended
+    to select a specific major.minor runtime version in production, as the default
+    runtime version may change at any time.
+name: projects/peerless-column-499516-a0/regions/us-central1/operations/e1a8f478-4804-3004-b727-34c71637270e
