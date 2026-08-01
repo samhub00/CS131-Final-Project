@@ -1,0 +1,94 @@
+Batch [6bca30b0151d48d18c3e6183f1879e45] submitted.
+WARNING: No runtime version specified. Using the default runtime version. It is recommended to select a specific major.minor runtime version in production, as the default runtime version may change at any time.
+Using the default container image
+Waiting for container log creation
+PYSPARK_PYTHON=/opt/dataproc/conda/bin/python
+Generating /home/spark/.pip/pip.conf
+Configuring index-url as 'https://us-python.pkg.dev/artifact-registry-python-cache/virtual-python/simple/'
+JAVA_HOME=/usr/lib/jvm/temurin-17-jdk-amd64
+SPARK_EXTRA_CLASSPATH=
+:: loading settings :: file = /etc/spark/conf/ivysettings.xml
+26/08/01 20:50:58 WARN MetricsConfig: Cannot locate configuration: tried hadoop-metrics2-google-hadoop-file-system.properties,hadoop-metrics2.properties
+26/08/01 20:50:58 INFO MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+26/08/01 20:50:58 INFO MetricsSystemImpl: google-hadoop-file-system metrics system started
++----------------+-----+--------------+-----------------+----------------------+------------------+-----------------------+------------------------------+-------------------------+------------------+---------+----------------------------------+-----------------+-----------------+----------+--------+-----------+-------------------+-------------+--------------+-----------------+---------------------------+---------------------+--------------------+
+|recommendationid|appid|          game|   author_steamid|author_num_games_owned|author_num_reviews|author_playtime_forever|author_playtime_last_two_weeks|author_playtime_at_review|author_last_played| language|                            review|timestamp_created|timestamp_updated|  voted_up|votes_up|votes_funny|weighted_vote_score|comment_count|steam_purchase|received_for_free|written_during_early_access|hidden_in_steam_china|steam_china_location|
++----------------+-----+--------------+-----------------+----------------------+------------------+-----------------------+------------------------------+-------------------------+------------------+---------+----------------------------------+-----------------+-----------------+----------+--------+-----------+-------------------+-------------+--------------+-----------------+---------------------------+---------------------+--------------------+
+|       148919893|   10|Counter-Strike|76561199036724879|                     0|                 3|                    197|                           197|                      197|        1698336369|  russian|                          старость|       1698336397|       1698336397|         1|       0|          0|                0.0|            0|             1|                0|                          0|                    1|                NULL|
+|       148919350|   10|Counter-Strike|76561198826729322|                     0|                21|                    441|                            37|                      441|        1698335809|  russian|                        Лучше кс 2|       1698335821|       1698335821|         1|       0|          0|                0.0|            0|             1|                0|                          0|                    1|                NULL|
+|       148913051|   10|Counter-Strike|76561199101237625|                     7|                 1|                   1440|                          1440|                     1313|        1698338635|  turkish|                çoh iyi ama pahalı|       1698329862|       1698329862|         1|       0|          0|                0.0|            0|             1|                0|                          0|                    1|                NULL|
+|       148912714|   10|Counter-Strike|76561198347582422|                    11|                 4|                   1636|                            83|                     1612|        1698341834|  russian|                               топ|       1698329555|       1698329555|         1|       0|          0|                0.0|            0|             1|                0|                          0|                    1|                NULL|
+|       148912575|   10|Counter-Strike|76561198363716821|                     0|                 2|                    197|                            41|                      197|        1698329401|  english|                      GOAT Game !!|       1698329419|       1698329419|         1|       0|          0|                0.0|            0|             1|                0|                          0|                    1|                NULL|
+|       148906148|   10|Counter-Strike|76561198198293481|                    22|                 2|                   1685|                            70|                     1649|        1698323046|  russian|                               топ|       1698321840|       1698321840|         1|       0|          0|                0.0|            0|             1|                0|                          0|                    1|                NULL|
+|       148905699|   10|Counter-Strike|76561198820122182|                    88|                39|                     11|                             0|                       11|        1695752100|  turkish|              eskisi kadar sarm...|       1698321259|       1698321259|         1|       0|          0|                0.0|            0|             0|                0|                          0|                    1|                NULL|
+|       148900627|   10|Counter-Strike|76561198346217916|                     0|                 2|                  45119|                           503|                    45119|        1698157431|  russian|                         Идеальная|       1698314419|       1698314419|         1|       0|          0|                0.0|            0|             1|                0|                          0|                    1|                NULL|
+|       148899121|   10|Counter-Strike|76561199143791757|                     9|                 4|                   1271|                           973|                     1202|        1698338304|  russian|                               топ|       1698312060|       1698312060|         1|       0|          0|                0.0|            0|             1|                0|                          0|                    1|                NULL|
+|       148898785|   10|Counter-Strike|76561198853145449|                   491|                60|                    721|                             0|                      721|        1660831719| schinese|史上最优秀的fps游戏，众多国产游...|       1698311451|       1698311451|         1|       0|          0|                0.0|            0|             1|                0|                          0|                    1|                NULL|
+|       148895540|   10|Counter-Strike|76561198134752176|                    69|                 1|                  12107|                             0|                    12107|        1670487891|  english|              First crush. Alwa...|       1698306096|       1698306096|         1|       0|          0|                0.0|            0|             0|                0|                          0|                    1|                NULL|
+|       148895230|   10|Counter-Strike|76561197985437504|                     0|                 5|                  42519|                             3|                    42515|        1698305811|  english|              best version of c...|       1698305569|       1698305569|         1|       0|          0|                0.0|            0|             0|                0|                          0|                    1|                NULL|
+|       148890174|   10|Counter-Strike|76561199240943468|                     0|                 3|                   6543|                           221|                     6322|        1698309444|  spanish|                  Simplemente Joya|       1698295972|       1698295972|         1|       0|          0|                0.0|            0|             1|                0|                          0|                    1|                NULL|
+|       148886265|   10|Counter-Strike|76561199019766609|                    52|                 1|                  25944|                           449|                    25944|        1697507624|    latam|              "No sé que cosa d...|             NULL|       1698288485|1698288485|       1|          0|                0.0|         NULL|             0|                0|                          1|                    0|                   1|
+|       148886126|   10|Counter-Strike|76561199549732430|                     0|                 2|                   7818|                          2968|                     7704|        1698294323|  spanish|              2023 y esto sigue...|       1698288275|       1698288275|         1|       0|          0|                0.0|            0|             1|                0|                          0|                    1|                NULL|
+|       148885183|   10|Counter-Strike|76561199108663568|                     0|                 1|                    317|                           306|                      278|        1698331093|    latam|              es un juegaso lit...|       1698286648|       1698286648|         1|       0|          0|                0.0|            0|             1|                0|                          0|                    1|                NULL|
+|       148882186|   10|Counter-Strike|76561198017029769|                     8|                 1|                     89|                            12|                       77|        1698282734|brazilian|                               top|       1698281414|       1698281414|         1|       0|          0|                0.0|            0|             0|                1|                          0|                    1|                NULL|
+|       148881526|   10|Counter-Strike|76561199090138342|                    49|                31|                    141|                            25|                      115|        1698282241| schinese|           cs2不好玩 以后就玩1.6了|       1698280257|       1698280257|         1|       0|          0|                0.0|            0|             1|                0|                          0|                    1|                NULL|
+|       148875516|   10|Counter-Strike|76561198125709322|                     0|                 1|                   5684|                            66|                     5617|        1698324019|  spanish|              El mejor juego de...|       1698270350|       1698270350|         1|       0|          0|                0.0|            0|             1|                0|                          0|                    1|                NULL|
+|       148872044|   10|Counter-Strike|76561199472918507|                     0|                 1|                   1762|                          1753|                     1674|        1698334424|  russian|                    Я Люблю Кс 1.6|       1698265715|       1698265715|         1|       0|          0|                0.0|            0|             1|                0|                          0|                    1|                NULL|
+|       148871274|   10|Counter-Strike|76561199046220129|                    41|                 1|                  24396|                            19|                    24396|        1697294069|  turkish|              Hala eğlencesine ...|       1698264667|       1698264667|         1|       0|          0|                0.0|            0|             0|                1|                          0|                    1|                NULL|
+|       148870840|   10|Counter-Strike|76561199509804538|                     0|                 5|                    189|                            76|                      189|        1698264096|    latam|                  Tremendo juegazo|       1698264111|       1698264111|         1|       0|          0|                0.0|            0|             1|                0|                          0|                    1|                NULL|
+|       148868788|   10|Counter-Strike|76561199278250934|                    16|                 3|                    102|                            20|                       81|        1698262896|  turkish|              TARİHİN EN İYİ OY...|       1698261508|       1698261508|         1|       0|          0|                0.0|            0|             1|                0|                          0|                    1|                NULL|
+|       148868716|   10|Counter-Strike|76561199488029638|                     0|                 1|                    411|                           230|                      407|        1698276226|  spanish|                           BLEEEH |       1698261406|       1698261406|         1|       0|          0|         0.47619048|            0|             1|                0|                          0|                    1|                NULL|
+|       148868089|   10|Counter-Strike|76561197966981490|                     0|                 1|                 163455|                            91|                   163455|        1698238558|brazilian|              Melhor jogo da hi...|       1698260592|       1698260592|         1|       1|          0|         0.52380955|            0|             0|                0|                          0|                    1|                NULL|
++----------------+-----+--------------+-----------------+----------------------+------------------+-----------------------+------------------------------+-------------------------+------------------+---------+----------------------------------+-----------------+-----------------+----------+--------+-----------+-------------------+-------------+--------------+-----------------+---------------------------+---------------------+--------------------+
+only showing top 25 rows
+
++-------------+--------+
+|review_length|voted_up|
++-------------+--------+
+|            8|       1|
+|           10|       1|
+|           18|       1|
+|            3|       1|
+|           12|       1|
+|            3|       1|
+|           21|       1|
+|            9|       1|
+|            3|       1|
+|           33|       1|
++-------------+--------+
+only showing top 10 rows
+
++-------------+--------+
+|review_length|voted_up|
++-------------+--------+
+|         1121|       0|
+|           15|       0|
+|           25|       0|
+|            3|       0|
+|           21|       0|
+|           14|       0|
+|            5|       0|
+|            4|       0|
+|            3|       0|
+|           30|       0|
++-------------+--------+
+only showing top 10 rows
+
+Batch [6bca30b0151d48d18c3e6183f1879e45] finished.
+metadata:
+  '@type': type.googleapis.com/google.cloud.dataproc.v1.BatchOperationMetadata
+  batch: projects/cs131-group-project-kyle-sam/locations/us-central1/batches/6bca30b0151d48d18c3e6183f1879e45
+  batchUuid: 0282d431-0b24-4b80-90f3-32eda5db0983
+  createTime: '2026-08-01T20:49:44.497576Z'
+  description: Batch
+  labels:
+    goog-dataproc-batch-id: 6bca30b0151d48d18c3e6183f1879e45
+    goog-dataproc-batch-uuid: 0282d431-0b24-4b80-90f3-32eda5db0983
+    goog-dataproc-drz-resource-uuid: batch-0282d431-0b24-4b80-90f3-32eda5db0983
+    goog-dataproc-location: us-central1
+  operationType: BATCH
+  warnings:
+  - No runtime version specified. Using the default runtime version. It is recommended
+    to select a specific major.minor runtime version in production, as the default
+    runtime version may change at any time.
+name: projects/cs131-group-project-kyle-sam/regions/us-central1/operations/35b6bdfc-75cf-3443-8b9d-b1dedfb3f951

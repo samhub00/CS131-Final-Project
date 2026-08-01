@@ -45,7 +45,7 @@ df = (spark.read.format("csv")
 #df.show(5)
 #df.printSchema()
 # check that schema worked
-df.show(25)
+#df.show(25)
 
 # select game name column
 # count occurrences of each game name
@@ -81,13 +81,18 @@ negative_reviews = df.select("review","voted_up").filter("voted_up == 0")
 
 
 # convert review column into string length of column
+# drop the review text because there are slurs :(
 pos_review_length = positive_reviews.withColumn("review_length", F.length("review")).select("review_length","voted_up")
-pos_review_length.show(10)
+pos_count_by_length = pos_review_length.select("review_length").groupBy("review_length").count().orderBy("count", ascending=False)
+print("Showing positive review count by length")
+pos_count_by_length.show(25)
+
 
 neg_review_length = negative_reviews.withColumn("review_length", F.length("review")).select("review_length","voted_up")
-neg_review_length.show(10)
+neg_count_by_length = neg_review_length.select("review_length").groupBy("review_length").count().orderBy("count", ascending=False)
+print("Showing negative review count by length")
+neg_count_by_length.show(25)
 
-# drop the review text because there are slurs :(
 
 
 spark.stop()
