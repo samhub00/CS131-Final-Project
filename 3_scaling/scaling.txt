@@ -7,3 +7,32 @@ gcloud dataproc batches submit pyspark access_test.py --region=$REGION --deps-bu
 
 # Top 15 games
 gcloud dataproc batches submit pyspark top15games.py --region=$REGION --deps-bucket=$BUCKET -- $BUCKET/data/all_reviews.csv 2>&1 | tee results_top15.txt
+
+
++-------+--------------------+--------------------+------------------+
+|  appid|                game|avg_playtime_minutes|avg_playtime_hours|
++-------+--------------------+--------------------+------------------+
+|1029760|           TANKNAROK|  108.43119266055047|1.8071865443425077|
+|1031580|             4DSnake|               184.5|             3.075|
+|1024950|Starship Horizons...|   953.4444444444445| 15.89074074074074|
+|1030210|      Torchlight III|  1077.7568167113411|17.962613611855684|
+|1027920|Enderal - Forgott...|                 0.0|               0.0|
+|1034260|The Far Kingdoms:...|            384.1875|          6.403125|
+|1029540|       Super Kittens|               215.0|3.5833333333333335|
+|1022850|Dark Deception Co...|                 0.0|               0.0|
+|1028660|           Pirouette|                42.8|0.7133333333333333|
+|1033780|        Lootbox Lyfe|   529.5526315789474| 8.825877192982457|
+|1029090|    Party Hard 2 DLC|                 0.0|               0.0|
+|1033060|Warhammer: Vermin...|                 0.0|               0.0|
+|1034370|          Iron Heart|               150.0|               2.5|
+|1023810|The Princess, the...|               276.0|               4.6|
+|1028270|theHunter: Call o...|                 0.0|               0.0|
+|1029310|Fate/EXTELLA LINK...|                 0.0|               0.0|
+|1024670|           Ruination|   529.9354838709677| 8.832258064516129|
+|1033489|DEAD OR ALIVE 6: ...|                 0.0|               0.0|
+|  10260|PT Boats: South G...|  190.23076923076923|3.1705128205128204|
+|1028840|    Super Toy Cars 2|  176.85185185185185| 2.947530864197531|
++-------+--------------------+--------------------+------------------+
+only showing top 20 rows
+
+Working on sorting tomorrow
