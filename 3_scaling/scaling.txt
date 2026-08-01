@@ -1,1 +1,9 @@
+# Preliminary commands
+BUCKET=gs://cs131-group-project-kyle-sam
+REGION=us-central1
+
+# Access test
 gcloud dataproc batches submit pyspark access_test.py --region=$REGION --deps-bucket=$BUCKET -- gs://$BUCKET/data/all_reviews.csv 2>&1 | tee results.txt
+
+# Top 15 games
+gcloud dataproc batches submit pyspark top15games.py --region=$REGION --deps-bucket=$BUCKET -- $BUCKET/data/all_reviews.csv 2>&1 | tee results_top15.txt
