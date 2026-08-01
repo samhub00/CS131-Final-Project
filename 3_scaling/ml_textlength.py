@@ -20,7 +20,12 @@ df = (spark.read.format("csv")
 # count occurrences of each game name
 # order by count column descending
 # show 15 rows
-df.select("game").groupBy("game").count().orderBy("count", ascending=False).show(15)
+#df.select("game").groupBy("game").count().orderBy("count", ascending=False).show(15)
 
+# filter data first
+# get review column and review status (review, voted_up)
+s1 = df.select("review", "voted_up")
+# convert review column into string length of column
+s1.withColumn("review_length", F.length("review")).show(15)
 
 spark.stop()

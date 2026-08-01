@@ -1,0 +1,52 @@
+Batch [e9ba23aad4e14d44a88cd77749eb29fe] submitted.
+WARNING: No runtime version specified. Using the default runtime version. It is recommended to select a specific major.minor runtime version in production, as the default runtime version may change at any time.
+Using the default container image
+Waiting for container log creation
+PYSPARK_PYTHON=/opt/dataproc/conda/bin/python
+Generating /home/spark/.pip/pip.conf
+Configuring index-url as 'https://us-python.pkg.dev/artifact-registry-python-cache/virtual-python/simple/'
+JAVA_HOME=/usr/lib/jvm/temurin-17-jdk-amd64
+SPARK_EXTRA_CLASSPATH=
+:: loading settings :: file = /etc/spark/conf/ivysettings.xml
+26/08/01 16:18:37 WARN MetricsConfig: Cannot locate configuration: tried hadoop-metrics2-google-hadoop-file-system.properties,hadoop-metrics2.properties
+26/08/01 16:18:37 INFO MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+26/08/01 16:18:37 INFO MetricsSystemImpl: google-hadoop-file-system metrics system started
++----------------------------------+----------+-------------+
+|                            review|  voted_up|review_length|
++----------------------------------+----------+-------------+
+|                          старость|         1|            8|
+|                        Лучше кс 2|         1|           10|
+|                çoh iyi ama pahalı|         1|           18|
+|                               топ|         1|            3|
+|                      GOAT Game !!|         1|           12|
+|                               топ|         1|            3|
+|              eskisi kadar sarm...|         1|           21|
+|                         Идеальная|         1|            9|
+|                               топ|         1|            3|
+|史上最优秀的fps游戏，众多国产游...|         1|           33|
+|              First crush. Alwa...|         1|           32|
+|              best version of c...|         1|           33|
+|                  Simplemente Joya|         1|           16|
+|              "No sé que cosa d...|1698288485|          115|
+|              2023 y esto sigue...|         1|           64|
++----------------------------------+----------+-------------+
+only showing top 15 rows
+
+Batch [e9ba23aad4e14d44a88cd77749eb29fe] finished.
+metadata:
+  '@type': type.googleapis.com/google.cloud.dataproc.v1.BatchOperationMetadata
+  batch: projects/cs131-group-project-kyle-sam/locations/us-central1/batches/e9ba23aad4e14d44a88cd77749eb29fe
+  batchUuid: 5d017f6c-2d85-4efd-b05a-862db84eebe0
+  createTime: '2026-08-01T16:17:13.942914Z'
+  description: Batch
+  labels:
+    goog-dataproc-batch-id: e9ba23aad4e14d44a88cd77749eb29fe
+    goog-dataproc-batch-uuid: 5d017f6c-2d85-4efd-b05a-862db84eebe0
+    goog-dataproc-drz-resource-uuid: batch-5d017f6c-2d85-4efd-b05a-862db84eebe0
+    goog-dataproc-location: us-central1
+  operationType: BATCH
+  warnings:
+  - No runtime version specified. Using the default runtime version. It is recommended
+    to select a specific major.minor runtime version in production, as the default
+    runtime version may change at any time.
+name: projects/cs131-group-project-kyle-sam/regions/us-central1/operations/e3152fc6-abcc-3fc1-b036-3cea33d3a201
