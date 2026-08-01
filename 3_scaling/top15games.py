@@ -18,7 +18,7 @@ df.printSchema()
 
 # select game name column
 # count occurrences of each game name
-df.select("game").groupBy("game").count().orderBy("count").show(15)
+df.select("game").groupBy("game").count().orderBy("count", ascending=False).show(15)
 # sort by ocurrences, descending order
 #df.sort("count", ascending=False)
 
