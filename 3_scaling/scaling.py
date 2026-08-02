@@ -6,9 +6,6 @@ from pyspark.ml.feature import VectorAssembler
 from pyspark.sql.types import StructType, StructField, StringType, IntegerType, LongType, FloatType
 from pyspark.sql import DataFrameWriter
 
-# begin timing
-start_time = time.time()
-
 input_path = sys.argv[1]
 output_path = sys.argv[2]
 
@@ -47,6 +44,9 @@ df = (spark.read.format("csv")
 	.schema(schema)
 	.option("header", "true")
 	.load(input_path))
+
+# begin timing
+start_time = time.time()
 
 # test 1: positive and negative review lengths
 # written by Kyle
