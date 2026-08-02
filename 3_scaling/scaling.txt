@@ -38,4 +38,4 @@ only showing top 20 rows
 Working on sorting tomorrow
 
 # Machine learning with review length and positive/negative
-gcloud dataproc batches submit pyspark ml_textlength.py --region=$REGION --deps-bucket=$BUCKET -- $BUCKET/data/all_reviews.csv 2>&1 | tee results_mltextlength.txt
+gcloud dataproc batches submit pyspark ml_textlength.py --region=$REGION --deps-bucket=$BUCKET -- $BUCKET/data/all_reviews.csv $BUCKET/output 2>&1 | tee results_mltextlength_8.txt
