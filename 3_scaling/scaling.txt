@@ -39,3 +39,9 @@ Working on sorting tomorrow
 
 # Machine learning with review length and positive/negative
 gcloud dataproc batches submit pyspark ml_textlength.py --region=$REGION --deps-bucket=$BUCKET -- $BUCKET/data/all_reviews.csv $BUCKET/output 2>&1 | tee results_mltextlength_8.txt
+
+# Scaling experiment precursor
+gcloud dataproc batches submit pyspark scaling.py --region=$REGION --deps-bucket=$BUCKET -- $BUCKET/data/all_reviews.csv $BUCKET/output 2>&1 | tee results_fullscaling_testrun.txt
+
+# Scaling experiment full run (couldn't do 1 executor so settled for 2, 4, and 6)
+bash scaling_full.sh
