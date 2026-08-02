@@ -1,4 +1,4 @@
-import sys
+import sys, io
 import time
 
 
@@ -6,14 +6,15 @@ start_time = time.time()
 
 
 from pyspark.sql import SparkSession, functions as F
-from pyspark.ml.feature import VectorAssembler
 from pyspark.sql.types import StructType, StructField, StringType, IntegerType, LongType, FloatType
+from google.cloud import storage
 
 input_path = sys.argv[1]
-#output_path = sys.argv[2]
+output_path = sys.argv[2]
 
-spark = SparkSession.builder.appName("access_test").getOrCreate() 
+spark = SparkSession.builder.appName("analysis").getOrCreate() 
 
+# defined schema to avoid incorrect inference of data types. 
 schema = StructType([
     StructField('recommendationid', LongType(), True),
     StructField('appid', IntegerType(), True),
@@ -52,8 +53,8 @@ df = df.filter(df["author_playtime_at_review"].isNotNull())
 df = df.filter(df['voted_up'] < 2)
 df = df.filter(df['author_playtime_at_review'] >= 0)
 df = df.filter(df['appid'].isNotNull())
+df = df.filter(df['language'] == 'english')
 
-from pyspark.sql import functions as F
 """
 
 # This dataframe creates the table below, borrowed from the average_playtime.py file
@@ -79,66 +80,53 @@ Most Reviewed Games
 """
 
 #For instance Counter-Strike 2:
-counter_strike_df = df.filter(df['appid'] == 730)
-# now we can look at the distribution of positive and negative reviews for this game.
-"""
-counter_strike_df_pn = counter_strike_df.groupBy("appid", "game").agg(
-    F.count(F.when(F.col("voted_up") == 1, True)).alias("positive_reviews"),
-    F.count(F.when(F.col("voted_up") == 0, True)).alias("negative_reviews")
-)
-"""
-#counter_strike_df_pn.show()
-"""
-+-----+----------------+----------------+----------------+
-|appid|            game|positive_reviews|negative_reviews|
-+-----+----------------+----------------+----------------+
-|  730|Counter-Strike 2|         6737222|          917771|
-+-----+----------------+----------------+----------------+
+df = df.filter(df['appid'].isin([730, 504320, 548430, 105600])) # filter for Counter-Strike 2, Celeste, Deep Rock Galactic, and Terraria
 
-Resulting table from splitting positive reviews and negative reviews.
-"""
+# Celeste is 504230
+# Deep Rock galactic is 548430 
+# Terraria is 105600
+
 # prepping df for graphing using review length and positive/negative review split. 
-cs2_for_graphing = counter_strike_df.withColumn(
+df = df.withColumn(
     "review_length", F.length(F.col("review"))
 ).select("appid", "voted_up", "review_length")
 
 # filter out reviews that are too long or short.
-cs2_for_graphing = cs2_for_graphing.filter(cs2_for_graphing["review_length"] < 8000)
-cs2_for_graphing = cs2_for_graphing.filter(cs2_for_graphing["review_length"] > 0)
-
-cs2_for_graphing.show(10)
-
-print("Counter-Strike 2 Review Length Distribution")
-
-cs2_for_graphing.describe("review_length").show()
-cs2_for_graphing.summary("count", "mean", "stddev", "min", "25%", "50%", "75%", "max").show()
-
-#cs2_for_graphing.plot.line(x="review_length", y=["voted_up"==1, "voted_up"==0], title="Counter-Strike 2 Review Length Distribution", xlabel="Review Length", ylabel="Voted Up (1=Positive, 0=Negative)")
-
-pivoted_df = (
-    cs2_for_graphing
-    .groupBy("review_length")
-    .pivot("voted_up", [0, 1]) # Splits voted_up into columns named '0' and '1'
-    .count()
-    .fillna(0)
-)
+df = df.filter(df["review_length"] < 8001)
+df = df.filter(df["review_length"] > 0)
 
 
-pivoted_df = pivoted_df.withColumnRenamed("1", "Positive").withColumnRenamed("0", "Negative")
+def make_graphing_csv(game_df, gameid):
+    #describe the statistics of the review_length column in the game_df DataFrame
+    game_df.describe("review_length").show()
+    # Aggregate review counts by review_length AND sentiment (voted_up) in PySpark
+    agg_df = (
+        game_df
+        .groupBy("review_length", "voted_up")
+        .count()
+    )
 
-pivoted_df.plot.line(
-    x="review_length", 
-    y=["Positive", "Negative"], 
-    title="Counter-Strike 2 Review Length Distribution", 
-    xlabel="Review Length", 
-    ylabel="Number of Reviews"
-)
+    # Bring the aggregated data (small) to Pandas
+    pandas_df = agg_df.toPandas()
+    # Need to change data so that plot can have two lines, one for positive reviews and one for negative reviews.
+    # Pivot so review_length is the index, and True/False (positive/negative) become columns
+    pivot_df = pandas_df.pivot(
+        index="review_length", 
+        columns="voted_up", 
+        values="count"
+    ).fillna(0)
 
-"""
-positive_reviews = df.select("review","voted_up").filter("voted_up == 1")
-negative_reviews = df.select("review","voted_up").filter("voted_up == 0")
+    print("Saving outputs to files in " + output_path)
+    pivot_df.to_csv(output_path + f"/graphing_data{gameid}.csv")
 
-"""
+print("Statistics for Counter-Strike 2 Reviews:")
+make_graphing_csv(df.filter(df["appid"] == 730), 730) # Counter-Strike 2
+print("Statistics for Celeste Reviews:")
+make_graphing_csv(df.filter(df["appid"] == 504230), 504230) # Celeste
+print("Statistics for Deep Rock Galactic Reviews:")
+make_graphing_csv(df.filter(df["appid"] == 548430), 548430) # Deep Rock Galactic
+print("Statistics for Terraria Reviews:")
+make_graphing_csv(df.filter(df["appid"] == 105600), 105600) # Terraria
 
 end_time = time.time()
 elapsed_time = end_time - start_time
