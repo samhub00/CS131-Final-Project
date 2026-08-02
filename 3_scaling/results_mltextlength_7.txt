@@ -1,0 +1,137 @@
+Batch [95af2bba81fe468597fefbe2041cc57f] submitted.
+WARNING: No runtime version specified. Using the default runtime version. It is recommended to select a specific major.minor runtime version in production, as the default runtime version may change at any time.
+Using the default container image
+Waiting for container log creation
+PYSPARK_PYTHON=/opt/dataproc/conda/bin/python
+Generating /home/spark/.pip/pip.conf
+Configuring index-url as 'https://us-python.pkg.dev/artifact-registry-python-cache/virtual-python/simple/'
+JAVA_HOME=/usr/lib/jvm/temurin-17-jdk-amd64
+SPARK_EXTRA_CLASSPATH=
+:: loading settings :: file = /etc/spark/conf/ivysettings.xml
+26/08/02 01:59:07 WARN MetricsConfig: Cannot locate configuration: tried hadoop-metrics2-google-hadoop-file-system.properties,hadoop-metrics2.properties
+26/08/02 01:59:07 INFO MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+26/08/02 01:59:07 INFO MetricsSystemImpl: google-hadoop-file-system metrics system started
++-------------+----------------+----------------+
+|review_length|positive_reviews|negative_reviews|
++-------------+----------------+----------------+
+|            1|            NULL|          122450|
+|            1|         1842626|            NULL|
+|            2|            NULL|          177366|
+|            2|         2158153|            NULL|
+|            3|         3121267|            NULL|
+|            3|            NULL|          230764|
+|            4|         3637343|            NULL|
+|            4|            NULL|          318875|
+|            5|            NULL|          247744|
+|            5|         2359582|            NULL|
+|            6|         1690943|            NULL|
+|            6|            NULL|          196548|
+|            7|         1877153|            NULL|
+|            7|            NULL|          186853|
+|            8|         1967681|            NULL|
+|            8|            NULL|          206788|
+|            9|            NULL|          214390|
+|            9|         2934053|            NULL|
+|           10|            NULL|          202831|
+|           10|         2131878|            NULL|
+|           11|            NULL|          195030|
+|           11|         1717587|            NULL|
+|           12|         1587131|            NULL|
+|           12|            NULL|          189216|
+|           13|         1448840|            NULL|
+|           13|            NULL|          192369|
+|           14|         1526202|            NULL|
+|           14|            NULL|          182685|
+|           15|            NULL|          178022|
+|           15|         1364838|            NULL|
+|           16|            NULL|          171257|
+|           16|         1289546|            NULL|
+|           17|         1185816|            NULL|
+|           17|            NULL|          162877|
+|           18|         1086975|            NULL|
+|           18|            NULL|          155327|
+|           19|            NULL|          151073|
+|           19|         1045870|            NULL|
+|           20|            NULL|          145511|
+|           20|          997209|            NULL|
+|           21|          972277|            NULL|
+|           21|            NULL|          140276|
+|           22|            NULL|          133857|
+|           22|          920389|            NULL|
+|           23|            NULL|          131199|
+|           23|          882601|            NULL|
+|           24|            NULL|          128788|
+|           24|          861562|            NULL|
+|           25|            NULL|          123008|
+|           25|          825997|            NULL|
+|           26|            NULL|          119154|
+|           26|          798983|            NULL|
+|           27|          768749|            NULL|
+|           27|            NULL|          115529|
+|           28|          746382|            NULL|
+|           28|            NULL|          112727|
+|           29|          727153|            NULL|
+|           29|            NULL|          109469|
+|           30|          707313|            NULL|
+|           30|            NULL|          106413|
+|           31|            NULL|          103031|
+|           31|          688865|            NULL|
+|           32|          668487|            NULL|
+|           32|            NULL|          100214|
+|           33|            NULL|           97427|
+|           33|          649178|            NULL|
+|           34|            NULL|           94713|
+|           34|          632225|            NULL|
+|           35|          617265|            NULL|
+|           35|            NULL|           92599|
+|           36|            NULL|           89703|
+|           36|          598907|            NULL|
+|           37|          581707|            NULL|
+|           37|            NULL|           88027|
+|           38|            NULL|           86231|
+|           38|          568857|            NULL|
+|           39|          556219|            NULL|
+|           39|            NULL|           84287|
+|           40|          541325|            NULL|
+|           40|            NULL|           82536|
+|           41|            NULL|           80836|
+|           41|          528321|            NULL|
+|           42|          512343|            NULL|
+|           42|            NULL|           78883|
+|           43|            NULL|           78290|
+|           43|          508021|            NULL|
+|           44|            NULL|           76273|
+|           44|          487805|            NULL|
+|           45|          478593|            NULL|
+|           45|            NULL|           74646|
+|           46|          466947|            NULL|
+|           46|            NULL|           74155|
+|           47|            NULL|           73113|
+|           47|          456384|            NULL|
+|           48|            NULL|           70707|
+|           48|          444608|            NULL|
+|           49|            NULL|           69024|
+|           49|          435429|            NULL|
+|           50|            NULL|           67769|
+|           50|          427359|            NULL|
++-------------+----------------+----------------+
+only showing top 100 rows
+
+Batch [95af2bba81fe468597fefbe2041cc57f] finished.
+metadata:
+  '@type': type.googleapis.com/google.cloud.dataproc.v1.BatchOperationMetadata
+  batch: projects/cs131-group-project-kyle-sam/locations/us-central1/batches/95af2bba81fe468597fefbe2041cc57f
+  batchUuid: 957c711c-022e-4dce-9735-c44972ba4b8d
+  createTime: '2026-08-02T01:57:47.406949Z'
+  description: Batch
+  labels:
+    goog-dataproc-batch-id: 95af2bba81fe468597fefbe2041cc57f
+    goog-dataproc-batch-uuid: 957c711c-022e-4dce-9735-c44972ba4b8d
+    goog-dataproc-drz-resource-uuid: batch-957c711c-022e-4dce-9735-c44972ba4b8d
+    goog-dataproc-location: us-central1
+  operationType: BATCH
+  warnings:
+  - No runtime version specified. Using the default runtime version. It is recommended
+    to select a specific major.minor runtime version in production, as the default
+    runtime version may change at any time.
+name: projects/cs131-group-project-kyle-sam/regions/us-central1/operations/83b6a92b-f83f-3d7f-8d67-aed14326d7b9

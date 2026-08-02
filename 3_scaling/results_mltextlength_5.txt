@@ -1,0 +1,95 @@
+Batch [8463c743ac2543f992ee853f0cf3fefe] submitted.
+WARNING: No runtime version specified. Using the default runtime version. It is recommended to select a specific major.minor runtime version in production, as the default runtime version may change at any time.
+Using the default container image
+Waiting for container log creation
+PYSPARK_PYTHON=/opt/dataproc/conda/bin/python
+Generating /home/spark/.pip/pip.conf
+Configuring index-url as 'https://us-python.pkg.dev/artifact-registry-python-cache/virtual-python/simple/'
+JAVA_HOME=/usr/lib/jvm/temurin-17-jdk-amd64
+SPARK_EXTRA_CLASSPATH=
+:: loading settings :: file = /etc/spark/conf/ivysettings.xml
+26/08/01 21:13:37 WARN MetricsConfig: Cannot locate configuration: tried hadoop-metrics2-google-hadoop-file-system.properties,hadoop-metrics2.properties
+26/08/01 21:13:37 INFO MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+26/08/01 21:13:37 INFO MetricsSystemImpl: google-hadoop-file-system metrics system started
+Showing positive review count by length
++-------------+-------+
+|review_length|  count|
++-------------+-------+
+|            4|3637343|
+|            3|3121267|
+|            9|2934053|
+|            5|2359582|
+|            2|2158153|
+|           10|2131878|
+|            8|1967681|
+|            7|1877153|
+|            1|1842626|
+|           11|1717587|
+|            6|1690943|
+|           12|1587131|
+|           14|1526202|
+|           13|1448840|
+|           15|1364838|
+|           16|1289546|
+|           17|1185816|
+|           18|1086975|
+|           19|1045870|
+|           20| 997209|
+|           21| 972277|
+|           22| 920389|
+|           23| 882601|
+|           24| 861562|
+|           25| 825997|
++-------------+-------+
+only showing top 25 rows
+
+Showing positive review count by length
++-------------+------+
+|review_length| count|
++-------------+------+
+|            4|318875|
+|            5|247744|
+|            3|230764|
+|            9|214390|
+|            8|206788|
+|           10|202831|
+|            6|196548|
+|           11|195030|
+|           13|192369|
+|           12|189216|
+|            7|186853|
+|           14|182685|
+|           15|178022|
+|            2|177366|
+|           16|171257|
+|           17|162877|
+|           18|155327|
+|           19|151073|
+|           20|145511|
+|           21|140276|
+|           22|133857|
+|           23|131199|
+|           24|128788|
+|           25|123008|
+|            1|122450|
++-------------+------+
+only showing top 25 rows
+
+Batch [8463c743ac2543f992ee853f0cf3fefe] finished.
+metadata:
+  '@type': type.googleapis.com/google.cloud.dataproc.v1.BatchOperationMetadata
+  batch: projects/cs131-group-project-kyle-sam/locations/us-central1/batches/8463c743ac2543f992ee853f0cf3fefe
+  batchUuid: bbf885d4-0f8a-4ba1-bf95-ff1425dc189c
+  createTime: '2026-08-01T21:12:30.756671Z'
+  description: Batch
+  labels:
+    goog-dataproc-batch-id: 8463c743ac2543f992ee853f0cf3fefe
+    goog-dataproc-batch-uuid: bbf885d4-0f8a-4ba1-bf95-ff1425dc189c
+    goog-dataproc-drz-resource-uuid: batch-bbf885d4-0f8a-4ba1-bf95-ff1425dc189c
+    goog-dataproc-location: us-central1
+  operationType: BATCH
+  warnings:
+  - No runtime version specified. Using the default runtime version. It is recommended
+    to select a specific major.minor runtime version in production, as the default
+    runtime version may change at any time.
+name: projects/cs131-group-project-kyle-sam/regions/us-central1/operations/97eabc83-78c2-3857-b642-d43d1611d26a

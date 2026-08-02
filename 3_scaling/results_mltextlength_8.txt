@@ -1,0 +1,68 @@
+Batch [1acc393af89249de9158a42606922ce6] submitted.
+WARNING: No runtime version specified. Using the default runtime version. It is recommended to select a specific major.minor runtime version in production, as the default runtime version may change at any time.
+Using the default container image
+Waiting for container log creation
+PYSPARK_PYTHON=/opt/dataproc/conda/bin/python
+Generating /home/spark/.pip/pip.conf
+Configuring index-url as 'https://us-python.pkg.dev/artifact-registry-python-cache/virtual-python/simple/'
+JAVA_HOME=/usr/lib/jvm/temurin-17-jdk-amd64
+SPARK_EXTRA_CLASSPATH=
+:: loading settings :: file = /etc/spark/conf/ivysettings.xml
+26/08/02 02:16:55 WARN MetricsConfig: Cannot locate configuration: tried hadoop-metrics2-google-hadoop-file-system.properties,hadoop-metrics2.properties
+26/08/02 02:16:55 INFO MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+26/08/02 02:16:55 INFO MetricsSystemImpl: google-hadoop-file-system metrics system started
+Showing positive review counts by length
++-------------+----------------+
+|review_length|positive_reviews|
++-------------+----------------+
+|            1|         1842626|
+|            2|         2158153|
+|            3|         3121267|
+|            4|         3637343|
+|            5|         2359582|
+|            6|         1690943|
+|            7|         1877153|
+|            8|         1967681|
+|            9|         2934053|
+|           10|         2131878|
++-------------+----------------+
+only showing top 10 rows
+
+Showing negative review counts by length
++-------------+----------------+
+|review_length|negative_reviews|
++-------------+----------------+
+|            1|          122450|
+|            2|          177366|
+|            3|          230764|
+|            4|          318875|
+|            5|          247744|
+|            6|          196548|
+|            7|          186853|
+|            8|          206788|
+|            9|          214390|
+|           10|          202831|
++-------------+----------------+
+only showing top 10 rows
+
+Saving outputs to files in gs://cs131-group-project-kyle-sam/output
+26/08/02 02:20:26 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+26/08/02 02:21:04 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+Batch [1acc393af89249de9158a42606922ce6] finished.
+metadata:
+  '@type': type.googleapis.com/google.cloud.dataproc.v1.BatchOperationMetadata
+  batch: projects/cs131-group-project-kyle-sam/locations/us-central1/batches/1acc393af89249de9158a42606922ce6
+  batchUuid: 844160ee-4d00-40a9-9e85-9fcf92e8f8bd
+  createTime: '2026-08-02T02:15:47.531460Z'
+  description: Batch
+  labels:
+    goog-dataproc-batch-id: 1acc393af89249de9158a42606922ce6
+    goog-dataproc-batch-uuid: 844160ee-4d00-40a9-9e85-9fcf92e8f8bd
+    goog-dataproc-drz-resource-uuid: batch-844160ee-4d00-40a9-9e85-9fcf92e8f8bd
+    goog-dataproc-location: us-central1
+  operationType: BATCH
+  warnings:
+  - No runtime version specified. Using the default runtime version. It is recommended
+    to select a specific major.minor runtime version in production, as the default
+    runtime version may change at any time.
+name: projects/cs131-group-project-kyle-sam/regions/us-central1/operations/a134b748-e179-3c18-bf8a-b8647b82a968
