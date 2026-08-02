@@ -1,0 +1,66 @@
+Batch [dd96e8c400b947179ff69629854cc637] submitted.
+WARNING: No runtime version specified. Using the default runtime version. It is recommended to select a specific major.minor runtime version in production, as the default runtime version may change at any time.
+Using the default container image
+Waiting for container log creation
+PYSPARK_PYTHON=/opt/dataproc/conda/bin/python
+Generating /home/spark/.pip/pip.conf
+Configuring index-url as 'https://us-python.pkg.dev/artifact-registry-python-cache/virtual-python/simple/'
+JAVA_HOME=/usr/lib/jvm/temurin-17-jdk-amd64
+SPARK_EXTRA_CLASSPATH=
+:: loading settings :: file = /etc/spark/conf/ivysettings.xml
+26/08/02 19:21:41 WARN MetricsConfig: Cannot locate configuration: tried hadoop-metrics2-google-hadoop-file-system.properties,hadoop-metrics2.properties
+26/08/02 19:21:41 INFO MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+26/08/02 19:21:41 INFO MetricsSystemImpl: google-hadoop-file-system metrics system started
++-----+--------+-------------+
+|appid|voted_up|review_length|
++-----+--------+-------------+
+|  730|       1|           10|
+|  730|       1|           15|
+|  730|       1|           11|
+|  730|       1|            8|
+|  730|       0|           45|
+|  730|       0|           28|
+|  730|       1|           46|
+|  730|       0|            6|
+|  730|       1|            8|
+|  730|       0|           16|
++-----+--------+-------------+
+only showing top 10 rows
+
+Counter-Strike 2 Review Length Distribution
++-------+------------------+
+|summary|     review_length|
++-------+------------------+
+|  count|           7654535|
+|   mean| 51.18602057473119|
+| stddev|173.22103957768556|
+|    min|                 1|
+|    max|              7999|
++-------+------------------+
+
+26/08/02 19:26:07 WARN SparkStringUtils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
++-------+--------------------+-------------------+------------------+
+|summary|               appid|           voted_up|     review_length|
++-------+--------------------+-------------------+------------------+
+|  count|             7654535|            7654535|           7654535|
+|   mean|               730.0| 0.8801115939766426| 51.18602057473119|
+| stddev|9.935354658975494...|0.32483101746785037|173.22103957768556|
+|    min|                 730|                  0|                 1|
+|    25%|                 730|                  1|                 6|
+|    50%|                 730|                  1|                15|
+|    75%|                 730|                  1|                40|
+|    max|                 730|                  1|              7999|
++-------+--------------------+-------------------+------------------+
+
+Traceback (most recent call last):
+  File "/var/dataproc/tmp/srvls-batch-9111ddd4-364e-440c-ae79-2a63ab1b1f44/rl_v_vu.py", line 129, in <module>
+    pivoted_df.plot.line(
+    ^^^^^^^^^^^^^^^
+  File "/usr/lib/spark/python/lib/pyspark.zip/pyspark/sql/dataframe.py", line 3127, in __getattr__
+AttributeError: 'DataFrame' object has no attribute 'plot'
+ERROR: (gcloud.dataproc.batches.submit.pyspark) Batch job is FAILED. Detail: Job failed with message [AttributeError: 'DataFrame' object has no attribute 'plot']. Additional details can be found at:
+https://console.cloud.google.com/dataproc/batches/us-central1/dd96e8c400b947179ff69629854cc637?project=peerless-column-499516-a0
+gcloud dataproc batches wait 'dd96e8c400b947179ff69629854cc637' --region 'us-central1' --project 'peerless-column-499516-a0'
+https://console.cloud.google.com/storage/browser/dataproc-staging-us-central1-632450616439-mqb7ovfl/google-cloud-dataproc-metainfo/ce1243de-e1a5-4b10-b368-6d18012f4100/jobs/srvls-batch-9111ddd4-364e-440c-ae79-2a63ab1b1f44/
+gs://dataproc-staging-us-central1-632450616439-mqb7ovfl/google-cloud-dataproc-metainfo/ce1243de-e1a5-4b10-b368-6d18012f4100/jobs/srvls-batch-9111ddd4-364e-440c-ae79-2a63ab1b1f44/driveroutput.*.
+Running auto diagnostics on the batch. It may take few minutes before diagnostics output is available. Please check diagnostics output by running 'gcloud dataproc batches describe' command.
