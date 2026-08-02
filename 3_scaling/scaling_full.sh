@@ -12,7 +12,7 @@ INPUTFILE=$BUCKET/data/all_reviews.csv
 SCRIPT=$BUCKET/code/scaling.py
 OUTPUTDEST=$BUCKET/output/scaling
 
-for N in 1 2 4; do
+for N in 2 4 6; do
     echo "=== Submitting batch with $N executor(s) ==="
     gcloud dataproc batches submit pyspark $SCRIPT \
         --region=$REGION \
@@ -21,7 +21,7 @@ for N in 1 2 4; do
         -- $INPUTFILE $OUTPUTDEST$N 2>&1 | tee results_scaling_$N.txt
     
     # wait between runs so the finished batch's machines release before the next one
-    if [ "$N" -ne 4 ]; then
+    if [ "$N" -ne 6 ]; then
         echo "=== Waiting 8 minutes for machines to release ==="
         sleep 480
     fi
