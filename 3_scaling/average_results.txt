@@ -1,0 +1,107 @@
+Batch [8a12eca74c934781b4e2cfc88c3e3b14] submitted.
+WARNING: No runtime version specified. Using the default runtime version. It is recommended to select a specific major.minor runtime version in production, as the default runtime version may change at any time.
+Using the default container image
+Waiting for container log creation
+PYSPARK_PYTHON=/opt/dataproc/conda/bin/python
+Generating /home/spark/.pip/pip.conf
+Configuring index-url as 'https://us-python.pkg.dev/artifact-registry-python-cache/virtual-python/simple/'
+JAVA_HOME=/usr/lib/jvm/temurin-17-jdk-amd64
+SPARK_EXTRA_CLASSPATH=
+:: loading settings :: file = /etc/spark/conf/ivysettings.xml
+26/08/02 05:17:35 WARN MetricsConfig: Cannot locate configuration: tried hadoop-metrics2-google-hadoop-file-system.properties,hadoop-metrics2.properties
+26/08/02 05:17:35 INFO MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+26/08/02 05:17:35 INFO MetricsSystemImpl: google-hadoop-file-system metrics system started
+Highest Average Playtime in hours at time of review
++-------+---------------------------------------------+------------------+------------+
+|appid  |game                                         |avg_playtime_hours|review_count|
++-------+---------------------------------------------+------------------+------------+
+|466170 |Idling to Rule the Gods                      |1812.4165645563876|1469        |
+|402840 |Crusaders of the Lost Idols                  |1481.6939933259175|2697        |
+|663090 |Granado Espada                               |1285.0862246442628|1101        |
+|570    |Dota 2                                       |1223.5333333333333|1026        |
+|1283970|YoloMouse                                    |1042.4878521126761|1420        |
+|1147690|NGU IDLE                                     |867.3919779787652 |10172       |
+|39210  |FINAL FANTASY XIV Online                     |855.7474936626259 |66405       |
+|992070 |Idle Wizard                                  |842.5154124860647 |1196        |
+|627690 |Idle Champions of the Forgotten Realms       |777.3323030649464 |12246       |
+|786520 |SAO Utils: Beta                              |750.4767800771659 |2851        |
+|1258320|黑色沙漠(失效)                               |712.5605811067932 |70251       |
+|582660 |Black Desert                                 |712.1267707473113 |70234       |
+|212200 |Mabinogi                                     |602.1632347140039 |3380        |
+|268850 |EVGA Precision X1                            |592.8359785967292 |4423        |
+|238960 |Path of Exile                                |582.5140899044309 |202541      |
+|1173510|XSOverlay                                    |579.4072527832351 |1018        |
+|250820 |SteamVR                                      |556.940460079324  |48325       |
+|230410 |Warframe                                     |537.7130318187485 |534800      |
+|236850 |Europa Universalis IV                        |531.7497693298454 |116978      |
+|702320 |March of Empires                             |525.657434226406  |1381        |
+|389430 |Knight Online                                |521.4422318868908 |10232       |
+|883860 |Cadria Item Shop                             |507.9102362204724 |1397        |
+|8800   |Sid Meier's Civilization IV: Beyond the Sword|507.75073946156573|3764        |
+|1546320|Your Chronicle                               |499.78048010973936|1215        |
+|1041320|Lords Mobile                                 |477.3295408779702 |4966        |
+|301120 |Eastside Hockey Manager                      |476.70093201754383|1216        |
+|506140 |Shop Heroes                                  |469.2399549937757 |3481        |
+|1013320|Firestone: Online Idle RPG                   |468.9809798368062 |4943        |
+|1009850|OVR Advanced Settings                        |468.35116824980895|3053        |
+|730    |Counter-Strike 2                             |462.6056151608064 |7654993     |
++-------+---------------------------------------------+------------------+------------+
+only showing top 30 rows
+
+Most Reviewed Games
++-------+------------------------------+------------------+------------+
+|appid  |game                          |avg_playtime_hours|review_count|
++-------+------------------------------+------------------+------------+
+|730    |Counter-Strike 2              |462.6056151608064 |7654993     |
+|578080 |PUBG: BATTLEGROUNDS           |376.1220455301746 |2216757     |
+|271590 |Grand Theft Auto V            |168.8377715886412 |1644997     |
+|105600 |Terraria                      |160.90774024182394|1194588     |
+|359550 |Tom Clancy's Rainbow Six Siege|265.65661804171356|1179984     |
+|4000   |Garry's Mod                   |304.9940807543383 |999905      |
+|440    |Team Fortress 2               |388.0432984231703 |987678      |
+|252490 |Rust                          |422.3570424333919 |963133      |
+|550    |Left 4 Dead 2                 |96.60137010021336 |783495      |
+|1172470|Apex Legends                  |177.3639758287104 |731860      |
+|292030 |The Witcher 3: Wild Hunt      |84.57760351834544 |715791      |
+|1245620|ELDEN RING                    |75.91824176155701 |707132      |
+|431960 |Wallpaper Engine              |62.863531504273965|705317      |
+|381210 |Dead by Daylight              |222.17869116164755|675948      |
+|945360 |Among Us                      |24.426682897710787|663954      |
+|346110 |ARK: Survival Evolved         |356.35990427605503|651387      |
+|227300 |Euro Truck Simulator 2        |125.85649213091332|650965      |
+|1091500|Cyberpunk 2077                |51.89188579732431 |642501      |
+|218620 |PAYDAY 2                      |100.43819593035785|629523      |
+|739630 |Phasmophobia                  |29.473264827568062|608124      |
+|413150 |Stardew Valley                |88.67052971307785 |601615      |
+|252950 |Rocket League                 |343.2882504176877 |557434      |
+|1085660|Destiny 2                     |300.38660999293376|557107      |
+|230410 |Warframe                      |537.7130318187485 |534800      |
+|304930 |Unturned                      |143.49714766563937|519814      |
+|242760 |The Forest                    |30.429696421383117|495182      |
+|1097150|Fall Guys                     |24.339476677561272|472099      |
+|1174180|Red Dead Redemption 2         |72.42820044983515 |461206      |
+|1938090|Call of Duty®                 |71.91057815823396 |445547      |
+|322330 |Don't Starve Together         |97.46501774986129 |419346      |
++-------+------------------------------+------------------+------------+
+only showing top 30 rows
+
+
+Total execution time: 239.91 seconds
+Batch [8a12eca74c934781b4e2cfc88c3e3b14] finished.
+metadata:
+  '@type': type.googleapis.com/google.cloud.dataproc.v1.BatchOperationMetadata
+  batch: projects/peerless-column-499516-a0/locations/us-central1/batches/8a12eca74c934781b4e2cfc88c3e3b14
+  batchUuid: ccbc8c73-ed19-425e-aaa5-798c7dfa8ec1
+  createTime: '2026-08-02T05:16:23.688174Z'
+  description: Batch
+  labels:
+    goog-dataproc-batch-id: 8a12eca74c934781b4e2cfc88c3e3b14
+    goog-dataproc-batch-uuid: ccbc8c73-ed19-425e-aaa5-798c7dfa8ec1
+    goog-dataproc-drz-resource-uuid: batch-ccbc8c73-ed19-425e-aaa5-798c7dfa8ec1
+    goog-dataproc-location: us-central1
+  operationType: BATCH
+  warnings:
+  - No runtime version specified. Using the default runtime version. It is recommended
+    to select a specific major.minor runtime version in production, as the default
+    runtime version may change at any time.
+name: projects/peerless-column-499516-a0/regions/us-central1/operations/b2c50095-5518-34fe-8a24-6828f85e9b0d
