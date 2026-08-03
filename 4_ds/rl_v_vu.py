@@ -80,7 +80,7 @@ Most Reviewed Games
 """
 
 #For instance Counter-Strike 2:
-df = df.filter(df['appid'].isin([730, 504320, 548430, 105600])) # filter for Counter-Strike 2, Celeste, Deep Rock Galactic, and Terraria
+df = df.filter(df['appid'].isin([730, 504230, 548430, 105600])) # filter for Counter-Strike 2, Celeste, Deep Rock Galactic, and Terraria
 
 # Celeste is 504230
 # Deep Rock galactic is 548430 
