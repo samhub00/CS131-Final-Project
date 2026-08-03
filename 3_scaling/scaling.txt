@@ -45,3 +45,8 @@ gcloud dataproc batches submit pyspark scaling.py --region=$REGION --deps-bucket
 
 # Scaling experiment full run (couldn't do 1 executor so settled for 2, 4, and 6)
 bash scaling_full.sh
+# Results are in the following text files, summarized below:
+# results_scaling_1.txt: Unable to be ran, because we could not assign 1 executor to the task. Needed at least 2.
+# results_scaling_2.txt: Successful run, returned a time of 1030.89 seconds (17 minutes). Took much longer than running without any parameters.
+# results_scaling_4.txt: Successful run, returned a time of 417.79 seconds (6.9 minutes). About a 2.46x speedup from the previous test.
+# results_scaling_6.txt: Successful run, returned a time of 271.27 seconds (4.5 minutes). About a 3.80x speedup from the 2 executor test, 1.54x from the 4 executor test.
