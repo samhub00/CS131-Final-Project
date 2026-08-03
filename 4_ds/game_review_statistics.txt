@@ -1,0 +1,81 @@
+Batch [9074d66d9bf34a0899d119abca70c67b] submitted.
+WARNING: No runtime version specified. Using the default runtime version. It is recommended to select a specific major.minor runtime version in production, as the default runtime version may change at any time.
+Using the default container image
+Waiting for container log creation
+PYSPARK_PYTHON=/opt/dataproc/conda/bin/python
+Generating /home/spark/.pip/pip.conf
+Configuring index-url as 'https://us-python.pkg.dev/artifact-registry-python-cache/virtual-python/simple/'
+JAVA_HOME=/usr/lib/jvm/temurin-17-jdk-amd64
+SPARK_EXTRA_CLASSPATH=
+:: loading settings :: file = /etc/spark/conf/ivysettings.xml
+26/08/03 00:03:31 WARN MetricsConfig: Cannot locate configuration: tried hadoop-metrics2-google-hadoop-file-system.properties,hadoop-metrics2.properties
+26/08/03 00:03:31 INFO MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+26/08/03 00:03:31 INFO MetricsSystemImpl: google-hadoop-file-system metrics system started
+Statistics for Counter-Strike 2 Reviews:
++-------+-----------------+
+|summary|    review_length|
++-------+-----------------+
+|  count|          2115152|
+|   mean|62.32920470963789|
+| stddev|208.5943244304444|
+|    min|                1|
+|    max|             8000|
++-------+-----------------+
+
+Saving outputs to files in gs://cs131-group-project-kyle-sam/output/graphing
+Statistics for Celeste Reviews:
++-------+-----------------+
+|summary|    review_length|
++-------+-----------------+
+|  count|            38398|
+|   mean| 167.332048544195|
+| stddev|373.9761069395123|
+|    min|                1|
+|    max|             7939|
++-------+-----------------+
+
+Saving outputs to files in gs://cs131-group-project-kyle-sam/output/graphing
+Statistics for Deep Rock Galactic Reviews:
++-------+------------------+
+|summary|     review_length|
++-------+------------------+
+|  count|            149847|
+|   mean|148.83471140563375|
+| stddev| 367.2866677184623|
+|    min|                 1|
+|    max|              8000|
++-------+------------------+
+
+Saving outputs to files in gs://cs131-group-project-kyle-sam/output/graphing
+Statistics for Terraria Reviews:
++-------+------------------+
+|summary|     review_length|
++-------+------------------+
+|  count|            601439|
+|   mean| 94.21269821212127|
+| stddev|250.63765527397885|
+|    min|                 1|
+|    max|              8000|
++-------+------------------+
+
+Saving outputs to files in gs://cs131-group-project-kyle-sam/output/graphing
+
+Total execution time: 597.52 seconds
+Batch [9074d66d9bf34a0899d119abca70c67b] finished.
+metadata:
+  '@type': type.googleapis.com/google.cloud.dataproc.v1.BatchOperationMetadata
+  batch: projects/peerless-column-499516-a0/locations/us-central1/batches/9074d66d9bf34a0899d119abca70c67b
+  batchUuid: 12744b2c-7a73-4991-900b-88e50afad391
+  createTime: '2026-08-03T00:02:16.619518Z'
+  description: Batch
+  labels:
+    goog-dataproc-batch-id: 9074d66d9bf34a0899d119abca70c67b
+    goog-dataproc-batch-uuid: 12744b2c-7a73-4991-900b-88e50afad391
+    goog-dataproc-drz-resource-uuid: batch-12744b2c-7a73-4991-900b-88e50afad391
+    goog-dataproc-location: us-central1
+  operationType: BATCH
+  warnings:
+  - No runtime version specified. Using the default runtime version. It is recommended
+    to select a specific major.minor runtime version in production, as the default
+    runtime version may change at any time.
+name: projects/peerless-column-499516-a0/regions/us-central1/operations/8bef7eb3-a718-34ce-98a5-2702dfe1366a
